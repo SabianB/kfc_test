@@ -26,12 +26,26 @@ composer install
 npm install
 ```
 
-### 3. Generar una clave con artisan (si no se ha generado).
+### 3. Variable .env (Si no se encuentra ya en el proyecto:)
+No es necesario configurarla ya que se ha incluido en el proyecto al solo haber modificado la APP_URL y tener las demás configuraciones por defecto.  
+
+#### En caso de no contar con la variable .env ejecutar:
+
+#### En Linux/macOS:
+```bash
+cp .env.example .env
+```
+#### Windows/CMD:
+```bash
+copy .env.example .env
+```
+
+### 4. Generar una clave con artisan (si no se ha generado).
 ```bash
 php artisan key:generate
 ```
 
-### 4. Levantar el proyecto (php artisan)
+### 5. Levantar el proyecto - Opcion 1 - (php artisan)
 
 En la ruta del proyecto ejecutar la siguiente linea:
 ```bash
@@ -42,7 +56,7 @@ Esto ejecutara el servidor en el puerto 8000 de localhost, podemos acceder media
 http://127.0.0.1:8000/
 ```
 
-### 5. Levantar el proyecto (XAMPP)
+### 6. Levantar el proyecto Opcion 2 - (XAMPP)
 
 Activar apache en el panel de control, colocar el proyecto en:
 ```bash
@@ -56,6 +70,3 @@ y para acceder al proyecto colocar en el url del navegador:
 ```bash
 localhost/kfc_test/public/
 ```
-
-### 6. Variable .env
-No es necesario configurarla ya que se ha incluido en el proyecto al solo haber modificado la APP_URL y tener lo demás por defecto.

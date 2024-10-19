@@ -31,7 +31,14 @@ php artisan key:generate
 
 ### 4. Levantar el proyecto (XAMPP)
 
-Activar apache en el panel de control 
+Activar apache en el panel de control, colocar el proyecto en:
+```bash
+xampp/htdocs/
+```
+resultado esperado:
+```bash
+xampp/htdocs/kfc_test/
+```
 y para acceder al proyecto colocar en el url del navegador:
 ```bash
 localhost/kfc_test/public/

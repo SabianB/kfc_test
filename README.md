@@ -7,7 +7,9 @@ Requerimientos:
 - [Composer](https://getcomposer.org/download/)
 - [Git](https://git-scm.com/)
 - [Node.js y NPM](https://nodejs.org/)
-- [Xampp PHP 8.1 o superior](https://www.apachefriends.org/es/download.html)
+- [PHP 8.1 o superior](https://www.php.net/downloads)
+- [Xampp PHP 8.1 o superior (opcional)](https://www.apachefriends.org/es/download.html)
+
 
 ## Pasos para levantar el proyecto
 
@@ -29,7 +31,18 @@ npm install
 php artisan key:generate
 ```
 
-### 4. Levantar el proyecto (XAMPP)
+### 4. Levantar el proyecto (php artisan)
+
+En la ruta del proyecto ejecutar la siguiente linea:
+```bash
+php artisan serve
+```
+Esto ejecutara el servidor en el puerto 8000 de localhost, podemos acceder mediante:
+```bash
+http://127.0.0.1:8000/
+```
+
+### 5. Levantar el proyecto (XAMPP)
 
 Activar apache en el panel de control, colocar el proyecto en:
 ```bash
@@ -44,5 +57,5 @@ y para acceder al proyecto colocar en el url del navegador:
 localhost/kfc_test/public/
 ```
 
-### 5. Variable .env
+### 6. Variable .env
 No es necesario configurarla ya que se ha incluido en el proyecto al solo haber modificado la APP_URL y tener lo demás por defecto.
